@@ -71,7 +71,10 @@ class JigsawPieceView extends StatelessWidget {
         ),
         child: ClipPath(
           clipper: JigsawClipper(profile),
-          child: Image.memory(bytes, fit: BoxFit.cover),
+          child: FittedBox(
+          fit: BoxFit.none,
+          alignment: Alignment.topLeft,
+          child: Image.memory(bytes),
         ),
       ),
     );
