@@ -55,6 +55,8 @@ class ImageSplitter {
             id: 'piece_$index',
             bytes: pieceBytes,
             correctIndex: index,
+            row: row,
+            col: col,
           ),
         );
 
